@@ -1,0 +1,54 @@
+#wrapper {
+  margin:auto;
+  width:1440px;
+}
+input {
+  width:50px;
+}
+svg {
+  border:1px solid gray;
+  border-radius:10px;
+  height:600px;
+  width:600px;
+  margin:5px;
+}
+#linechart {
+  width:800px;
+}
+
+html {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.countrymap {
+  stroke: black;
+}
+
+
+h2, h3 {
+  text-align:center;
+}
+
+.tooltip {
+     position: absolute;
+     text-align: left;
+     padding: .5rem;
+     background: #FFFFFF;
+     color: #313639;
+     border: 1px solid #313639;
+     border-radius: 8px;
+     pointer-events: none;
+     font-size: 1.3rem;
+}
+
+.tooltip-lineGraph {
+     position: absolute;
+     text-align: left;
+     padding: .5rem;
+     background: #FFFFFF;
+     color: #313639;
+     border: 1px solid #313639;
+     border-radius: 8px;
+     pointer-events: none;
+     font-size: 1.3rem;
+}
