@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<title>CSE 578 Homework #1: Nithiya Shree Uppara</title>
+	</head>
+	<style>
+		.container {
+			maxwidth: 970px;
+		}
+		h2, h3, h4, span {
+			text-align: center;
+		}
+		img {
+			width:100%;
+			border: 1px solid gray;
+		}
+		p {
+			text-align: justify;
+			text-justify: inter-word;
+		}
+	</style>
+    <body>
+	    <div class="container">
+			<header>
+				<h2 style=>Homework #1 - Vis in the Wild</h2>
+				<h3>Nithiya Shree Uppara&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;26 August 2020</h3>
+			</header>
+			<hr>
+			<img src="imgs/Frequency-Plot.png" alt="The cool visualization example that I found!">
+			<hr>
+			<h4>Frequency Plot</h4>
+			<div style="width:100%;text-align:center;">
+				<a href="https://arxiv.org/abs/1903.12020" target="_blank">https://arxiv.org/abs/1903.12020</a></span>
+			</p>
+			<p>
+				The paper "Describing like Humans: on Diversity of Imgae Captioning" evaluted the following captioning models:(1) NIC (Neural image caption generator), (2) AdapAtt, (3) CVAE, (4) GMMCVAE, (5) CGAN using 4 different approaches to generating diverse image captioning with a baseline model. These 4 different approaches are (1) Random Sampling (RS), (2) Randomly Cropped Images (RCI), (3) Gaussian Noise Corruption(GNC) and (4) Synonym Switch (SS). Different Random Vectors (DRV) are generated from Gaussian distributions with different standard deviations to generate the captions, for the models which are capable of generating diverse captions.
+				
+			</p>
+
+			<p>
+				The paper uses human image captioned data from Karpathy's training split of MSCOCO to train the models. This dataset consists of a total of 5000 images. Each model is used to generate 10 captions for every single image.
+			</p>
+
+			<p>
+				The graph shows the frequency plots of the words used by the above models. The graphs looks really interesting because it shows the comparison of the frequency plots of different models which generate captions using different approaches and also compares the frequency plots of same model generating captions with different approaches.
+			</p>
+			<p>
+				The graph helps the user in viewing the values at different data points for understanding the trends of every model.
+				The graph also shows the compared values of the same model with different approaches to estimate the difference among them.
+			</p>
+		</div>
+	</body>
+</html>
