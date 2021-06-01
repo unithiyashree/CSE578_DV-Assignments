@@ -1,0 +1,39 @@
+#wrapper {
+    margin:auto;
+    width:auto;
+  }
+  input {
+    width:50px;
+  }
+  svg {
+    border:1px solid gray;
+    border-radius:10px;
+    height:700px;
+    width:680px;
+    
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* background-image: url("./../images/lekagul_roadways.jpg") */
+  }
+  /* #linechart {
+    width:800px;
+  } */
+  
+  html {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  .countrymap {
+    stroke: black;
+  }
+  
+  
+  h2, h3 {
+    text-align:center;
+  }
+
+  h4{
+    text-align:left;
+  }
