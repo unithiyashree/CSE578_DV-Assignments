@@ -1,0 +1,60 @@
+#wrapper {
+    margin:auto;
+    width:1440px;
+  }
+  input {
+    width:50px;
+  }
+
+  #plot {
+    border:1px solid gray;
+    border-radius:10px;
+    height:600px;
+    width: 700px;
+    /*margin:5px;
+    */
+    margin-top:20px;
+    margin-bottom:10px;
+    margin-left: 500px;
+    margin-right: 10px;
+  
+  }
+
+  #trend {
+    border:1px solid gray;
+    border-radius:10px;
+    height:600px;
+    width:500px;
+    /*margin:5px;
+    */
+    margin-top:20px;
+    margin-bottom:10px;
+    margin-left: 500px;
+    margin-right: 10px;
+    background-image:  url("./../images/space.jpeg");
+  }
+  
+  html {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  h2, h3 {
+    text-align:center;
+  }
+  
+  #description{
+    text-align: left;
+  }
+  
+  .tooltip {
+       position: absolute;
+       text-align: left;
+       padding: .5rem;
+       background: #FFFFFF;
+       color: #313639;
+       border: 1px solid #313639;
+       border-radius: 8px;
+       pointer-events: none;
+       font-size: 1.3rem;
+  }
+  

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>CSE 494 - Fall 2020 - Homework #5</title>
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles1.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+    <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted">Nithiya Shree Uppara - nuppara@asu.edu - 1215229834</a>
+        </div>
+        <div class="col-8 text-right">
+          <a class="blog-header-logo text-dark">Homework #5: Innovative Visualization Design</a>
+        </div>
+      </div>
+  </header>
+
+  <div class="jumbotron p-4 text-white rounded bg-dark">
+    <div class="col-md-12">
+      <h1 class="font-italic">Soviet Space Dogs </h1>
+      <p class="my-3">48 dogs who participated in the Soviet space program in the 1950s and 1960s.<br> <br>
+        The visualization shows the movement of rockets in a selected year with the number of dogs travelling along it.
+        As you hover over each element, the details corresponding to them are displayed.
+        If you click on the circle, the right part shows of the trends of the dog travelling in different rockets in different years.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row md-2">
+      <div class="col-md-12">
+        <div class="row md-2">
+          <div class="col-md-2"></div>
+          <div class="col-md-1">
+              <label class="form-control"><strong>Year</strong></label>
+          </div>
+          <div class="col-md-2">
+              <select id='year-input' class="form-control dropleft">
+                  <option value='1951'>1951</option>
+                  <option value='1954'>1954</option>
+                  <option value='1955'>1955</option>
+                  <option value='1956'>1956</option>
+                  <option value='1957'>1957</option>
+                  <option value='1958'>1958</option>
+                  <option value='1959'>1959</option>
+                  <option value='1960'>1960</option>
+                  <option value='1961'>1961</option>
+                  <option value='1966'>1966</option> 
+              </select>
+          </div>
+          <br>
+          <div class="col-md-1">
+            <button class="form-control btn btn-primary" id='play-input' type="button">Play</button>
+            <br><br><br>
+          </div>
+          </div>
+        </div>
+          <div class="row md-2">
+            <div class="col-md-12">
+              <div class="row md-2">
+              <div class="col-md-9">
+                <svg id='plot'></svg>
+              </div>
+              <div class="col-md-3">
+                <svg id='trend'></svg>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+  <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src='scripts/homework5.js'></script>
+</html>

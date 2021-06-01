@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>CSE 494 - Fall 2020 - Homework #5</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    
+    <link rel='stylesheet' href='css/styles.css'>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src='scripts/homework5.js'></script>
+    
+    <style>
+      .x-axis line, .x-axis path { stroke: #fff; }
+    </style>
+  </head>
+  
+  <body>
+    <div id='details'>
+      <h2>Homework #5: Innovative Visualization Design</h2>
+      <h3>Nithiya Shree Uppara - nuppara@asu.edu - 1215229834</h3>
+    </div>
+    <div id='wrapper'>
+      <hr style='width:100%'>
+      <h1>Soviet Space Dogs</h1>
+      <h3 id="description"> 48 dogs who participated in the Soviet space program in the 1950s and 1960s. </h3>
+      <!-- &nbsp;Year:&nbsp;
+      <input id='year-input' type='number' value='1951'/>
+      &nbsp; -->
+      &nbsp;Year : &nbsp;
+      <select id='year-input'>
+        <option value='1951'>1951</option>
+        <option value='1954'>1954</option>
+        <option value='1955'>1955</option>
+        <option value='1956'>1956</option>
+        <option value='1957'>1957</option>
+        <option value='1958'>1958</option>
+        <option value='1959'>1959</option>
+        <option value='1960'>1960</option>
+        <option value='1961'>1961</option>
+        <option value='1966'>1966</option> 
+      </select>
+      &nbsp;
+      <button id='play-input' type="button">Play</button>
+      &nbsp;
+      <br/>
+    </div>
+    <div>
+      <svg id='plot'></svg> 
+      <svg id='trend'></svg>
+    </div>
+  </body>
+</html>
