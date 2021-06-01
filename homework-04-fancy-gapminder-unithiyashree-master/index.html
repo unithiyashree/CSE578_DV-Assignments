@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <<title>CSE 494 - Fall 2020 - Homework #4</title>
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+    <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted">Nithiya Shree Uppara - nuppara@asu.edu - 1215229834</a>
+        </div>
+        <div class="col-8 text-right">
+          <a class="blog-header-logo text-dark">Homework #4: Fancy GapMinder</a>
+        </div>
+      </div>
+  </header>
+
+  <div class="jumbotron p-4 text-white rounded bg-dark">
+    <div class="col-md-12">
+      <h1 class="font-italic">Mean years in school (1970-2015) </h1>
+      <p class="my-3">The average number of years of school attended by all the people in the age and gender group specified, including primary, secondary, tertiary education.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row md-2">
+      <div class="col-md-9">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <svg id='scatterplot'></svg>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <br><br><br><br>
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"><strong>Year</strong></label>
+        <input class="form-control" id='year-input' type='number' value='2000'/>
+        <br>
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"><strong>X-Attribute</strong></label>
+          <select id='x-attribute' class=" form-control dropleft custom-select my-1 mr-sm-2">
+            <option value='mean_men_15to24'>Mean of men between 15 and 24 years</option>
+            <option value='mean_women_15to24'>Mean of women between 15 and 24 years</option>
+            <option value='mean_men_above25'>Mean of men above 25 years</option>
+            <option value='mean_women_above25'>Mean of women above 25 years</option>
+            <option value='mean_men_above65'>Mean of men above 65 years</option>
+            <option value='mean_women_above65'>Mean of women above 65 years</option>
+          </select>
+
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"><strong>Y-Attribute</strong></label>
+          <select id='y-attribute' class=" form-control dropleft custom-select my-1 mr-sm-2">
+            <option value='mean_men_15to24'>Mean of men between 15 and 24 years</option>
+            <option value='mean_women_15to24'>Mean of women between 15 and 24 years</option>
+            <option value='mean_men_above25'>Mean of men above 25 years</option>
+            <option value='mean_women_above25'>Mean of women above 25 years</option>
+            <option value='mean_men_above65'>Mean of men above 65 years</option>
+            <option value='mean_women_above65'>Mean of women above 65 years</option>
+          </select>
+
+
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"><strong>Region</strong></label>
+          <select id='region' class="form-control dropleft custom-select my-1 mr-sm-2">
+            <option value='South Asia'>South Asia</option>
+            <option value='Europe & Central Asia'>Europe & Central Asia</option>
+            <option value='Middle East & North Africa'>Middle East & North Africa</option>
+            <option value='East Asia & Pacific'>East Asia & Pacific</option>
+            <option value='Sub-Saharan Africa'>Sub-Saharan Africa</option>
+            <option value='Latin America & Caribbean'>Latin America & Caribbean</option>
+            <option value='North America'>North America</option>
+          </select>
+          <br><br>
+        <button class="form-control btn btn-primary" id='play-input' type="button">Play</button>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+  <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src='scripts/homework4.js'></script>
+</html>

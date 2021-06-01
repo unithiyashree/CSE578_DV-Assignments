@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>CSE 494 - Fall 2020 - Homework #4</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    
+    <link rel='stylesheet' href='css/styles.css'>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src='scripts/homework4.js'></script>
+    
+    <style>
+      .x-axis line, .x-axis path { stroke: #fff; }
+    </style>
+  </head>
+  
+  <body>
+    <div id='details'>
+      <h2>Homework #4: Fancy GapMinder</h2>
+      <h3>Nithiya Shree Uppara - nuppara@asu.edu - 1215229834</h3>
+    </div>
+    <div id='wrapper'>
+      <hr style='width:100%'>
+      <h1>Mean years in school (1970-2015)</h1>
+      <h3 id="description">The average number of years of school attended by all the people in the age and gender group specified, including primary, secondary, tertiary education. </h3>
+      &nbsp;Year:&nbsp;
+      <input id='year-input' type='number' value='2000'/>
+      &nbsp;
+      &nbsp;X-Attribute&nbsp;
+      <select id='x-attribute'>
+        <option value='mean_men_15to24'>Mean of men between 15 and 24 years</option>
+        <option value='mean_women_15to24'>Mean of women between 15 and 24 years</option>
+        <option value='mean_men_above25'>Mean of men above 25 years</option>
+        <option value='mean_women_above25'>Mean of women above 25 years</option>
+        <option value='mean_men_above65'>Mean of men above 65 years</option>
+        <option value='mean_women_above65'>Mean of women above 65 years</option>
+      </select>
+      &nbsp;
+      &nbsp;Y-Attribute&nbsp;
+      <select id='y-attribute'>
+        <option value='mean_men_15to24'>Mean of men between 15 and 24 years</option>
+        <option value='mean_women_15to24'>Mean of women between 15 and 24 years</option>
+        <option value='mean_men_above25'>Mean of men above 25 years</option>
+        <option value='mean_women_above25'>Mean of women above 25 years</option>
+        <option value='mean_men_above65'>Mean of men above 65 years</option>
+        <option value='mean_women_above65'>Mean of women above 65 years</option>
+      </select>
+      &nbsp;
+      &nbsp;Region : &nbsp;
+      <select id='region'>
+        <option value='South Asia'>South Asia</option>
+        <option value='Europe & Central Asia'>Europe & Central Asia</option>
+        <option value='Middle East & North Africa'>Middle East & North Africa</option>
+        <option value='East Asia & Pacific'>East Asia & Pacific</option>
+        <option value='Sub-Saharan Africa'>Sub-Saharan Africa</option>
+        <option value='Latin America & Caribbean'>Latin America & Caribbean</option>
+        <option value='North America'>North America</option>
+      </select>
+      &nbsp;
+      <button id='play-input' type="button">Play</button>
+      <!-- <input id='play-input' type='number' value='Start'/> -->
+      &nbsp;
+      <br/>
+    </div>
+    <div>
+      <svg id='scatterplot'></svg>
+    </div>
+  </body>
+</html>

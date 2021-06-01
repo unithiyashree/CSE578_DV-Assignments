@@ -1,0 +1,50 @@
+#wrapper {
+  margin:auto;
+  width:1440px;
+}
+input {
+  width:50px;
+}
+svg {
+  border:1px solid gray;
+  border-radius:10px;
+  height:600px;
+  width:1000px;
+  /*margin:5px;
+  */
+  margin-top:20px;
+  margin-bottom:10px;
+  margin-left: 30px;
+  margin-right: 10px;
+
+}
+
+html {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+.countrymap {
+  stroke: black;
+}
+
+
+h2, h3 {
+  text-align:center;
+}
+
+#description{
+  text-align: left;
+}
+
+.tooltip {
+     position: absolute;
+     text-align: left;
+     padding: .5rem;
+     background: #FFFFFF;
+     color: #313639;
+     border: 1px solid #313639;
+     border-radius: 8px;
+     pointer-events: none;
+     font-size: 1.3rem;
+}
